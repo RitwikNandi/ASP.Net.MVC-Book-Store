@@ -1,0 +1,11 @@
+D:\Programs and Scripts\Book-Store-Models\bin\Debug\net8.0\Book-Store-Models.deps.json
+D:\Programs and Scripts\Book-Store-Models\bin\Debug\net8.0\Book-Store-Models.dll
+D:\Programs and Scripts\Book-Store-Models\bin\Debug\net8.0\Book-Store-Models.pdb
+D:\Programs and Scripts\Book-Store-Models\obj\Debug\net8.0\Book-Store-Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs and Scripts\Book-Store-Models\obj\Debug\net8.0\Book-Store-Models.AssemblyInfoInputs.cache
+D:\Programs and Scripts\Book-Store-Models\obj\Debug\net8.0\Book-Store-Models.AssemblyInfo.cs
+D:\Programs and Scripts\Book-Store-Models\obj\Debug\net8.0\Book-Store-Models.csproj.CoreCompileInputs.cache
+D:\Programs and Scripts\Book-Store-Models\obj\Debug\net8.0\Book-Store-Models.dll
+D:\Programs and Scripts\Book-Store-Models\obj\Debug\net8.0\refint\Book-Store-Models.dll
+D:\Programs and Scripts\Book-Store-Models\obj\Debug\net8.0\Book-Store-Models.pdb
+D:\Programs and Scripts\Book-Store-Models\obj\Debug\net8.0\ref\Book-Store-Models.dll
