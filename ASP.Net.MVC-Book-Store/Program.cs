@@ -1,4 +1,6 @@
 using Book_Store_DataAccess.Context;
+using Book_Store_DataAccess.Repository;
+using Book_Store_DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -19,6 +21,7 @@ namespace ASP.Net.MVC_Book_Store
                 option.UseSqlServer(builder.Configuration.GetConnectionString("BookStore"));
             });
 
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             
 
             var app = builder.Build();

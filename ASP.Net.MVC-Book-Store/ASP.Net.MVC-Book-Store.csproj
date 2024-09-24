@@ -26,6 +26,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
     <PackageReference Include="React.Web" Version="5.2.12" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.7.3" />
     <PackageReference Include="System.Web.Optimization.React" Version="5.2.12" />
@@ -33,6 +34,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Book-Store-DataAccess\Book-Store-DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\products\" />
   </ItemGroup>
 
 </Project>

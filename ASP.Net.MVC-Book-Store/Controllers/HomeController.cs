@@ -3,6 +3,8 @@ using System.Diagnostics;
 
 namespace ASP.Net.MVC_Book_Store.Controllers
 {
+  
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -22,6 +24,6 @@ namespace ASP.Net.MVC_Book_Store.Controllers
             return View();
         }
 
-        
+
     }
 }
