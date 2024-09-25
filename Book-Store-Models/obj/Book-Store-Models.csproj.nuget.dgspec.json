@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programs and Scripts\\Book-Store-Models\\Book-Store-Models.csproj": {}
+    "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Models\\Book-Store-Models.csproj": {}
   },
   "projects": {
-    "D:\\Programs and Scripts\\Book-Store-Models\\Book-Store-Models.csproj": {
+    "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Models\\Book-Store-Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programs and Scripts\\Book-Store-Models\\Book-Store-Models.csproj",
+        "projectUniqueName": "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Models\\Book-Store-Models.csproj",
         "projectName": "Book-Store-Models",
-        "projectPath": "D:\\Programs and Scripts\\Book-Store-Models\\Book-Store-Models.csproj",
+        "projectPath": "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Models\\Book-Store-Models.csproj",
         "packagesPath": "C:\\Users\\RITWIK\\.nuget\\packages\\",
-        "outputPath": "D:\\Programs and Scripts\\Book-Store-Models\\obj\\",
+        "outputPath": "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RITWIK\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

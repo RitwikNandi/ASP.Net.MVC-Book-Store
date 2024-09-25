@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programs and Scripts\\Book-Store-Utility\\Book-Store-Utility.csproj": {}
+    "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Utility\\Book-Store-Utility.csproj": {}
   },
   "projects": {
-    "D:\\Programs and Scripts\\Book-Store-Utility\\Book-Store-Utility.csproj": {
+    "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Utility\\Book-Store-Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programs and Scripts\\Book-Store-Utility\\Book-Store-Utility.csproj",
+        "projectUniqueName": "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Utility\\Book-Store-Utility.csproj",
         "projectName": "Book-Store-Utility",
-        "projectPath": "D:\\Programs and Scripts\\Book-Store-Utility\\Book-Store-Utility.csproj",
+        "projectPath": "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Utility\\Book-Store-Utility.csproj",
         "packagesPath": "C:\\Users\\RITWIK\\.nuget\\packages\\",
-        "outputPath": "D:\\Programs and Scripts\\Book-Store-Utility\\obj\\",
+        "outputPath": "D:\\Programs and Scripts\\ASP.Net-MVC-Book-Store\\Book-Store-Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RITWIK\\AppData\\Roaming\\NuGet\\NuGet.Config",

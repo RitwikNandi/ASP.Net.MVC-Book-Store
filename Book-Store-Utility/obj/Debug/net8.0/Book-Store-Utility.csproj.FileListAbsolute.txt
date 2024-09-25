@@ -9,3 +9,15 @@ D:\Programs and Scripts\Book-Store-Utility\obj\Debug\net8.0\Book-Store-Utility.d
 D:\Programs and Scripts\Book-Store-Utility\obj\Debug\net8.0\refint\Book-Store-Utility.dll
 D:\Programs and Scripts\Book-Store-Utility\obj\Debug\net8.0\Book-Store-Utility.pdb
 D:\Programs and Scripts\Book-Store-Utility\obj\Debug\net8.0\ref\Book-Store-Utility.dll
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\bin\Debug\net8.0\Book-Store-Utility.deps.json
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\bin\Debug\net8.0\Book-Store-Utility.dll
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\bin\Debug\net8.0\Book-Store-Utility.pdb
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\obj\Debug\net8.0\Book-Store-Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\obj\Debug\net8.0\Book-Store-Utility.AssemblyInfoInputs.cache
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\obj\Debug\net8.0\Book-Store-Utility.AssemblyInfo.cs
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\obj\Debug\net8.0\Book-Store-Utility.csproj.CoreCompileInputs.cache
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\obj\Debug\net8.0\Book-Store-Utility.sourcelink.json
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\obj\Debug\net8.0\Book-Store-Utility.dll
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\obj\Debug\net8.0\refint\Book-Store-Utility.dll
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\obj\Debug\net8.0\Book-Store-Utility.pdb
+D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-Utility\obj\Debug\net8.0\ref\Book-Store-Utility.dll

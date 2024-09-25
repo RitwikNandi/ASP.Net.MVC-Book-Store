@@ -49,6 +49,92 @@ namespace Book_Store_DataAccess.Migrations
                             DisplayOrder = 1
                         });
                 });
+
+            modelBuilder.Entity("Book_Store_Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Author")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ISBN")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("List50")
+                        .HasColumnType("float");
+
+                    b.Property<double>("ListPrice")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price100")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 2,
+                            Author = "Harper Lee",
+                            CategoryId = 1,
+                            Description = "A classic novel about racial injustice in the American South.",
+                            ISBN = "9780446310775",
+                            ImageUrl = "",
+                            List50 = 90.0,
+                            ListPrice = 50.0,
+                            Price100 = 70.0,
+                            Title = "To Kill a Mockingbird"
+                        },
+                        new
+                        {
+                            Id = 1,
+                            Author = "George Orwell",
+                            CategoryId = 1,
+                            Description = "A dystopian novel about a totalitarian government.",
+                            ISBN = "9780451534856",
+                            ImageUrl = "",
+                            List50 = 90.0,
+                            ListPrice = 50.0,
+                            Price100 = 70.0,
+                            Title = "1984"
+                        });
+                });
+
+            modelBuilder.Entity("Book_Store_Models.Product", b =>
+                {
+                    b.HasOne("Book_Store_Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
 #pragma warning restore 612, 618
         }
     }

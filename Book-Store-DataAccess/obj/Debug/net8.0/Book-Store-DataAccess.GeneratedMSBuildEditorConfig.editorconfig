@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Book_Store_DataAccess
-build_property.ProjectDir = D:\Programs and Scripts\Book-Store-DataAccess\
+build_property.ProjectDir = D:\Programs and Scripts\ASP.Net-MVC-Book-Store\Book-Store-DataAccess\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
