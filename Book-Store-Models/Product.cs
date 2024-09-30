@@ -30,6 +30,7 @@ namespace Book_Store_Models
         [Range(1, 10000)]
         public double? Price100 { get; set; }
 
+        [ValidateNever]
         public string? ImageUrl { get; set; }
 
         public int? CategoryId { get; set; }

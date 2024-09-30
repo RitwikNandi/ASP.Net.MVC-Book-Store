@@ -1,14 +1,12 @@
-﻿@using Book_Store_Models.ViewModels
-@model ProductViewModel
+﻿@model ProductViewModel
 
-<form method="post" enctype="multipart/form-data">
-    <input asp-for="Product.Id" hidden />
-    <div class="borfer p-3 mt-4">
+<form method="post" >
+    <input asp-for="@Model.Product.Id" hidden />
+    <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary"> stuff</h2>
+            <h2 class="text-dark py-2"> Product</h2>
             <hr />
         </div>
-        <div asp-validation-summary="All"></div>
         <div class="mb-3 row p-1">
             <label asp-for="Product.Title" class="p-0"></label>
             <input asp-for="Product.Title" class="form-control" />
@@ -17,7 +15,6 @@
         <div class="mb-3 row p-1">
             <label asp-for="Product.Description" class=" p-0"></label>
             <textarea asp-for="Product.Description" class="form-control"></textarea>
-            <span asp-validation-for="Product.Description" class="text-danger"></span>
         </div>
         <div class="mb-3 row p-1">
             <label asp-for="Product.Author" class=" p-0"></label>
@@ -31,8 +28,7 @@
         </div>
         <div class="mb-3 row p-1">
             <label asp-for="Product.ImageUrl" class=" p-0"></label>
-            <input type="file" name="file" class="form-control" />
-           
+            <input asp-for="Product.ImageUrl" class="form-control" />
         </div>
         <div class="mb-3 row p-1">
             <label asp-for="Product.ListPrice" class=" p-0"></label>
@@ -48,14 +44,14 @@
             <label asp-for="Product.Price100" class=" p-0"></label>
             <input asp-for="Product.Price100" class="form-control" />
             <span asp-validation-for="Product.Price100" class="text-danger"></span>
-            
-        <div class="mb-3 row p-1">
+
+         <div class="mb-3 row p-1">
                 <label asp-for="Product.CategoryId" class=" p-0"></label>
                 <select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-list">
                 <option disabled selected>---Select a Category---</option>
-            </select>
+                </select>
                 <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
-        </div>
+            </div>
 
         <div class="row">
             <div class="col-6 col-md-3">
