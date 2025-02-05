@@ -1,19 +1,22 @@
 ﻿using Book_Store_Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 
 namespace Book_Store_DataAccess.Context
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> option) : base(option) { }
 
         public DbSet<Category> Categories { get; set; }
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; } 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Category>().HasData(
                 new Category
                 {
@@ -25,7 +28,7 @@ namespace Book_Store_DataAccess.Context
             modelBuilder.Entity<Product>().HasData(
                 new Product
                 {
-                    Id = 2,
+                    Id = Guid.NewGuid(),
                     Title = "To Kill a Mockingbird",
                     Description = "A classic novel about racial injustice in the American South.",
                     Author = "Harper Lee",
@@ -37,7 +40,7 @@ namespace Book_Store_DataAccess.Context
                     CategoryId = 1
                 },
                 new Product {
-                    Id = 1,
+                    Id = Guid.NewGuid(),
                     Title = "1984",
                     Description = "A dystopian novel about a totalitarian government.",
                     Author = "George Orwell",

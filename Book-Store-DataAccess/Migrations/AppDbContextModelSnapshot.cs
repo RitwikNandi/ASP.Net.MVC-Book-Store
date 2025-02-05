@@ -53,11 +53,9 @@ namespace Book_Store_DataAccess.Migrations
 
             modelBuilder.Entity("Book_Store_Models.Product", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Author")
                         .HasColumnType("nvarchar(max)");
@@ -95,7 +93,7 @@ namespace Book_Store_DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 2,
+                            Id = new Guid("ff6a7c97-12ec-466e-a043-f73edc0d763c"),
                             Author = "Harper Lee",
                             CategoryId = 1,
                             Description = "A classic novel about racial injustice in the American South.",
@@ -108,7 +106,7 @@ namespace Book_Store_DataAccess.Migrations
                         },
                         new
                         {
-                            Id = 1,
+                            Id = new Guid("b111968b-9f0a-40aa-96fb-ab3168bc0f92"),
                             Author = "George Orwell",
                             CategoryId = 1,
                             Description = "A dystopian novel about a totalitarian government.",

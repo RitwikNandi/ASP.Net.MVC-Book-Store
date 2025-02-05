@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -7,7 +8,7 @@
 namespace Book_Store_DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class retryyetagain : Migration
+    public partial class letsseeagainagain : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -30,17 +31,16 @@ namespace Book_Store_DataAccess.Migrations
                 name: "Products",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Author = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ISBN = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ListPrice = table.Column<double>(type: "float", nullable: false),
-                    List50 = table.Column<double>(type: "float", nullable: false),
-                    Price100 = table.Column<double>(type: "float", nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CategoryId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Author = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ISBN = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ListPrice = table.Column<double>(type: "float", nullable: true),
+                    List50 = table.Column<double>(type: "float", nullable: true),
+                    Price100 = table.Column<double>(type: "float", nullable: true),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CategoryId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -49,8 +49,7 @@ namespace Book_Store_DataAccess.Migrations
                         name: "FK_Products_Categories_CategoryId",
                         column: x => x.CategoryId,
                         principalTable: "Categories",
-                        principalColumn: "CategoryId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "CategoryId");
                 });
 
             migrationBuilder.InsertData(
@@ -63,8 +62,8 @@ namespace Book_Store_DataAccess.Migrations
                 columns: new[] { "Id", "Author", "CategoryId", "Description", "ISBN", "ImageUrl", "List50", "ListPrice", "Price100", "Title" },
                 values: new object[,]
                 {
-                    { 1, "George Orwell", 1, "A dystopian novel about a totalitarian government.", "9780451534856", "", 90.0, 50.0, 70.0, "1984" },
-                    { 2, "Harper Lee", 1, "A classic novel about racial injustice in the American South.", "9780446310775", "", 90.0, 50.0, 70.0, "To Kill a Mockingbird" }
+                    { new Guid("b111968b-9f0a-40aa-96fb-ab3168bc0f92"), "George Orwell", 1, "A dystopian novel about a totalitarian government.", "9780451534856", "", 90.0, 50.0, 70.0, "1984" },
+                    { new Guid("ff6a7c97-12ec-466e-a043-f73edc0d763c"), "Harper Lee", 1, "A classic novel about racial injustice in the American South.", "9780446310775", "", 90.0, 50.0, 70.0, "To Kill a Mockingbird" }
                 });
 
             migrationBuilder.CreateIndex(

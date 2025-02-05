@@ -11,41 +11,20 @@
             <a asp-controller="Product" asp-action="UpsertProducts" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create New Category</a>
         </div>
     </div>
-    <table class="table table-bordered table-striped">
+    <table id="productTable" class="table table-bordered table-striped" style="width:100%">
         <thead>
             <tr>
                 <td>Title</td>
-                <td>Description</td>
                 <td>ISBN</td>
                 <td>Author</td>
                 <td>Price</td>
                 <td>Category</td>
-                <th>Actions</th>
+                <th></th>
             </tr>
         </thead>
-        <tbody>
-            @foreach (var obj in Model)
-            {
-                <tr>
-                    <td>@obj.Title</td>
-                    <td>@obj.Description</td>
-                    <td>@obj.ISBN</td>
-                    <td>@obj.Author</td>
-                    <td>₹ @obj.ListPrice</td>
-                    <td>@obj.CategoryId</td>
-                    <td>
-                        <div class="w-75 btn-group" role="group">
-                            <a asp-controller="Product" asp-action="UpsertProducts" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
-                                <i class="bi bi-pencil-square"></i> Edit
-                            </a>
-                            <a asp-controller="Product" asp-action="DeleteProducts" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
-                                <i class="bi bi-trash-fill"></i> Delete
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            }
-        </tbody>
-
     </table>
 </div>
+
+@section Scripts {
+    <script src="~/js/product.js"></script>
+}

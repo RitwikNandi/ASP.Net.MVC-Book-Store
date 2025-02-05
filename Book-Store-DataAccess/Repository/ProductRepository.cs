@@ -23,6 +23,23 @@ namespace Book_Store_DataAccess.Repository
 
         public void Update(Product product)
         {
+            //var objFromDb = _productContext.Products.FirstOrDefault(p => p.Id == product.Id);
+
+            //if (objFromDb != null) { 
+            //    objFromDb.Title = product.Title;
+            //    objFromDb.Description = product.Description;
+            //    objFromDb.CategoryId = product.CategoryId;
+            //    objFromDb.Author = product.Author;
+            //    objFromDb.ISBN = product.ISBN;
+            //    objFromDb.List50 = product.List50;
+            //    objFromDb.ListPrice = product.ListPrice;
+            //    objFromDb.Price100 = product.Price100;
+
+            //    if (objFromDb.ImageUrl != null) {
+            //        objFromDb.ImageUrl = product.ImageUrl;
+            //    }
+            //}
+
             _productContext.Products.Update(product);
         }
     }
